@@ -50,6 +50,7 @@ header{
     padding-bottom: 15px;
     margin-bottom: 20px;
     border-bottom: 2px solid #ddddff;
+
 }
 
 #site_container{
@@ -99,6 +100,8 @@ header{
 
 }
 
+
+
 #sidebar_content div{
   background: #ffffdd;
   border-radius: 10px;
@@ -121,7 +124,33 @@ header{
     flex-basis: 27%;
   }
   #sidebar_content{
-    flex-basis: 25%;
-    flex-wrap: wrap;
+    display: flex;
   }
+  #sidebar_content div{
+    flex-basis: 33%;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  header{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: baseline;
+  }
+  #logo{
+    flex-basis: 30%;
+    text-align: left;
+  }
+  #main_nav{
+    display: flex;
+    flex-basis: 70%;
+  }
+  #main_content{
+    display: flex;
+  }
+  #main_content div:first-child{
+    flex-basis: 69%;
+  }
+
+
 }
